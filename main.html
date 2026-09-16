@@ -16,7 +16,7 @@
         </div>
 
         <div><label for="email">Email</label>
-            <input type="text" name="email" id="" placeholder="enter email">
+            <input type="email" name="email" id="email" placeholder="enter email" required>
         </div>
         <div><label for="gender">Gender:</label>
             <label for="male">Male</label>
@@ -24,8 +24,12 @@
              <label for="female">Female</label>
             <input type="radio" id="female" name="gender">
         </div>
-        <div><label for="carbrand">Car Brand</label>
-            <select name="carbrand" id="carbrand">
+		<div>
+			 <label for="age">Age</label>
+            <input type="number" name="age" id="age" required placeholder="Age">
+		</div>
+        <div><label for="cars">Car Brand</label>
+            <select name="cars" id="cars">
                 <option value="">--Please Choose an option--</option>
                 <option value="BMW">BMW</option>
                 <option value="Mercedes">Mercedes</option>
@@ -35,17 +39,16 @@
         <div><label for="dob">DOB</label>
             <input type="date" name="dob" id="dob">
         </div>
-        <div><label for="Phone">Phone Number</label>
-            <input type="tel" id="Phone" required placeholder="xxx-xxx-xxxx">
+        <div><label for="tel">Phone Number</label>
+            <input type="tel" id="tel" required placeholder="xxx-xxx-xxxx">
         </div>
         <div><label for="password">Password</label>
             <input type="password" id="password" required name="password" placeholder="password">
         </div>
-        <div><label for="license">I agree to the TOS</label>
-            <input type="checkbox" id="license" value="agreed" required>
+        <div><label for="tos">I agree to the TOS</label>
+            <input type="checkbox" id="tos" value="agreed" required>
         </div>
-        <div><label for=""></label>
-        </div>
+
 		<div>
 			         <button type="submit">Submit</button>
 		</div>
