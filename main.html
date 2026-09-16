@@ -8,64 +8,49 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="post">
+	
+    <form method="post">
+        <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+        </div>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" required>
+        <div><label for="email">Email</label>
+            <input type="text" name="email" id="" placeholder="enter email">
+        </div>
+        <div><label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+             <label for="female">Female</label>
+            <input type="radio" id="female" name="gender">
+        </div>
+        <div><label for="carbrand">Car Brand</label>
+            <select name="carbrand" id="carbrand">
+                <option value="">--Please Choose an option--</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Ferrari">Ferrari</option>
+            </select>
+        </div>
+        <div><label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob">
+        </div>
+        <div><label for="Phone">Phone Number</label>
+            <input type="tel" id="Phone" required placeholder="xxx-xxx-xxxx">
+        </div>
+        <div><label for="password">Password</label>
+            <input type="password" id="password" required name="password" placeholder="password">
+        </div>
+        <div><label for="license">I agree to the TOS</label>
+            <input type="checkbox" id="license" value="agreed" required>
+        </div>
+        <div><label for=""></label>
+        </div>
 
-    <br><br>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" required>
 
-    <br><br>
-
-    <label for="gender_m">Male</label>
-    <input type="radio" id="gender_m" name="gender" value="male" required>
-
-    <label for="gender_f">Female</label>
-    <input type="radio" id="gender_f" name="gender" value="female" required>
-
-    <br><br>
-
-    <label for="cars">Car Brands</label>
-    <select id="cars" name="cars" required>
-        <option value="">--Please choose an option--</option>
-        <option value="BMW">BMW</option>
-        <option value="Audi">Audi</option>
-        <option value="Mercedes">Mercedes</option>
-    </select>
-
-    <br><br>
-
-    <label for="age">Age</label>
-    <input type="number" id="age" name="age" placeholder="Age" required>
-
-    <br><br>
-
-    <label for="dob">DOB</label>
-    <input type="date" id="dob" name="dob" required>
-
-    <br><br>
-
-    <label for="tel">Phone Number</label>
-    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
-
-    <br><br>
-
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" placeholder="Password" required>
-
-    <br><br>
-
-    <label for="tos">I agree to the TOS</label>
-    <input type="checkbox" id="tos" name="tos" value="agreed" required>
-
-    <br><br>
-
-    <button type="submit">Submit</button>
-
-</form>
+    </form>
+    
     <script type="text/javascript" src="./script.js">
 </script>
 
